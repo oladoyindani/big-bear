@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- AOS Library for Scroll Animations -->
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <!-- Your Custom CSS -->
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -13,10 +15,18 @@
   <!-- ======== HEADER / NAV ======== -->
   <header>
     <nav class="navbar">
-      <div class="logo">Nigeria Foundation</div>
-      <ul class="nav-links">
+      <div class="logo">
+        <img src="logo-two.png" alt="logo" />
+      </div>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links" id="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#eligibility">Eligibility</a></li>
+        <li><a href="#featured">Featured</a></li>
         <li><a href="#faq">FAQs</a></li>
         <li><a href="#apply" class="apply-btn">Apply Now</a></li>
       </ul>
@@ -53,42 +63,125 @@
     </div>
   </section>
 
-  <!-- ======== ELIGIBILITY CRITERIA ======== -->
+  <!-- ======== SCHOLARSHIP BENEFITS SECTION ======== -->
+  <section class="benefits" id="benefits">
+    <h2 data-aos="fade-up">Scholarship Benefits</h2>
+    <div class="benefit-content" data-aos="fade-up">
+      <!-- Undergraduate Benefit Card -->
+      <div class="benefit-card">
+        <h3>Undergraduate Students</h3>
+        <p>Successful undergraduate recipients will receive a ₦300,000 scholarship, disbursed as:</p>
+        <ul>
+          <li>One-time or two-time payment directly into the student’s verified bank account.</li>
+          <li>Can be used for tuition, learning materials, and living expenses.</li>
+          <li>Includes access to NTEF career support, mentorship programs, and exclusive development events.</li>
+        </ul>
+      </div>
+      <!-- MSc Benefit Card -->
+      <div class="benefit-card">
+        <h3>Postgraduate Students (MSc)</h3>
+        <p>Successful MSc recipients will receive a ₦500,000 scholarship, disbursed as:</p>
+        <ul>
+          <li>One-time or two-time payment depending on the program duration and verification status.</li>
+          <li>Covers tuition fees, research/project support, and academic-related costs.</li>
+          <li>Includes access to development-focused programs, industry mentorship, and internship opportunities.</li>
+        </ul>
+      </div>
+      <!-- PhD Benefit Card -->
+      <div class="benefit-card">
+        <h3>Postgraduate Students (PhD)</h3>
+        <p>PhD awardees will receive an advanced support package (amount to be specified), disbursed as:</p>
+        <ul>
+          <li>Two-time disbursement to align with research phases and progress milestones.</li>
+          <li>Covers research funding, conference travel, publication assistance, and academic expenses.</li>
+          <li>Priority access to global research networks, national think tanks, and policy-impact initiatives.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== FEATURED SCHOLARSHIPS SLIDER SECTION ======== -->
+  <section class="featured" id="featured">
+    <h2 data-aos="fade-up">Featured Scholarships</h2>
+    <div class="slider" data-aos="fade-up">
+      <div class="slide active">
+        <img src="https://www.nileuniversity.edu.ng/wp-content/uploads/2022/11/YJP_5349-1.jpg" alt="Scholarship 1">
+        <div class="slide-caption">Scholarship Opportunity 1</div>
+      </div>
+      <div class="slide">
+        <img src="https://nileuniversity.edu.ng/wp-content/uploads/2022/11/YJP_5239-1.jpg" alt="Scholarship 2">
+        <div class="slide-caption">Scholarship Opportunity 2</div>
+      </div>
+      <div class="slide">
+        <img src="https://cdn-flbag.nitrocdn.com/lHRvxOluTwiwfOjFRNeqQHYYVasaauTG/assets/images/optimized/rev-b922770/honoris.net/wp-content/uploads/2024/12/2th-Convocation-Ceremony-1.png" alt="Scholarship 3">
+        <div class="slide-caption">Scholarship Opportunity 3</div>
+      </div>
+      <div class="slider-controls">
+        <button id="prevSlide" class="slider-btn">&#10094;</button>
+        <button id="nextSlide" class="slider-btn">&#10095;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== ELIGIBILITY CRITERIA SECTION ======== -->
   <section class="eligibility" id="eligibility">
     <h2 data-aos="fade-up">Eligibility Criteria</h2>
     <ul data-aos="fade-right">
-      <li>1. Be Nigerian citizens.</li>
-      <li>2. Be enrolled in a recognized Nigerian polytechnic (ND/HND) or university (undergraduate or postgraduate).</li>
-      <li>3. Meet ONE of the following academic requirements:</li>
-      <ul>
-        <li>Fresh Students (no GPA/CGPA): JAMB score of 180 or above.</li>
-        <li>Continuing Students: Minimum GPA/CGPA of 2.5 on a 4.0 scale (or equivalent).</li>
-      </ul>
-      <li>4. Commit to full-time study during the scholarship period.</li>
+      <li>Be Nigerian citizens.</li>
+      <li>Be enrolled in a recognized Nigerian polytechnic (ND/HND) or university (undergraduate or postgraduate).</li>
+      <li>
+        Meet ONE of the following academic requirements:
+        <ul>
+          <li>Fresh Students (no GPA/CGPA): JAMB score of 180 or above.</li>
+          <li>Continuing Students: Minimum GPA/CGPA of 2.5 on a 4.0 scale (or equivalent).</li>
+        </ul>
+      </li>
+      <li>Commit to full-time study during the scholarship period.</li>
     </ul>
   </section>
 
-  <!-- ======== REWARD SYSTEM ======== -->
-  <section class="rewards">
-    <h2 data-aos="fade-up">Reward System</h2>
-    <p data-aos="fade-left"><strong>Top 100 Students:</strong></p>
-    <ul data-aos="fade-left">
-      <li>Branded laptop + academic backpack</li>
-      <li>N250,000 annual stipend (renewable yearly, contingent on maintaining a GPA/CGPA ≥ 2.5)</li>
-    </ul>
-    <p data-aos="fade-left"><strong>All Qualifying Candidates:</strong></p>
-    <ul data-aos="fade-left">
-      <li>N250,000 annual stipend (renewable yearly, subject to sustained academic performance)</li>
-    </ul>
-    <p data-aos="fade-left">
-      <strong>Total Recipients:</strong> Scholarship is limited to only 100,000 students nationwide (including the top 100).
-    </p>
-  </section>
+  <!-- ======== GENERAL ELIGIBILITY SECTION ======== -->
+  <div class="container">
+    <h1>General Eligibility (All Students)</h1>
+    <div class="section" data-aos="fade-up">
+        <h2>Applicants must:</h2>
+        <ul>
+            <li>Be a Nigerian citizen with a valid National Identity Number (NIN).</li>
+            <li>Be enrolled or completed a tertiary institution (university, polytechnic, or college of education) in Nigeria.</li>
+            <li>Have a minimum of 5 O'Level credits including English Language and Mathematics.</li>
+            <li>Provide accurate and verifiable documentation.</li>
+        </ul>
+    </div>
+    <div class="section" data-aos="fade-up">
+        <h2>Postgraduate Applicants – MSc</h2>
+        <ul>
+            <li>Must possess a minimum of Second Class Upper (2.1) in their first degree, or Second Class Lower (2.2) with relevant industry experience.</li>
+            <li>Must have completed the National Youth Service Corps (NYSC).</li>
+            <li>Be computer literate.</li>
+            <li>Submit a Statement of Purpose (max 500 words) stating:
+                <ul>
+                    <li>The reason for the proposed study</li>
+                    <li>Its relevance to the industry</li>
+                    <li>Its expected impact on national development</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="section" data-aos="fade-up">
+        <h2>Postgraduate Applicants – PhD</h2>
+        <ul>
+            <li>Must have completed the National Youth Service Corps (NYSC).</li>
+            <li>Be computer literate.</li>
+            <li>Possess a minimum of Second Class Lower (2.2) in their first degree and a good Master's degree.</li>
+            <li>Research must be relevant to national development goals.</li>
+        </ul>
+    </div>
+    <p class="note" data-aos="fade-up">*Note: Postgraduate applicants will be reached out to separately via email provided.</p>
+  </div>
 
-<!-- ======== FAQ SECTION ======== -->
-<section class="faq" id="faq">
+  <!-- ======== FAQ SECTION ======== -->
+  <section class="faq" id="faq">
     <h2 data-aos="fade-up">Frequently Asked Questions (FAQs)</h2>
-    
     <!-- FAQ 1 -->
     <div class="faq-item" data-aos="fade-up">
       <button class="faq-question">
@@ -100,7 +193,6 @@
         </p>
       </div>
     </div>
-  
     <!-- FAQ 2 -->
     <div class="faq-item" data-aos="fade-up">
       <button class="faq-question">
@@ -112,7 +204,6 @@
         </p>
       </div>
     </div>
-  
     <!-- FAQ 3 -->
     <div class="faq-item" data-aos="fade-up">
       <button class="faq-question">
@@ -124,7 +215,6 @@
         </p>
       </div>
     </div>
-  
     <!-- FAQ 4 -->
     <div class="faq-item" data-aos="fade-up">
       <button class="faq-question">
@@ -136,7 +226,6 @@
         </p>
       </div>
     </div>
-  
     <!-- FAQ 5 -->
     <div class="faq-item" data-aos="fade-up">
       <button class="faq-question">
@@ -148,7 +237,6 @@
         </p>
       </div>
     </div>
-  
     <!-- FAQ 6 -->
     <div class="faq-item" data-aos="fade-up">
       <button class="faq-question">
@@ -160,7 +248,6 @@
         </p>
       </div>
     </div>
-  
     <!-- FAQ 7 -->
     <div class="faq-item" data-aos="fade-up">
       <button class="faq-question">
@@ -173,7 +260,6 @@
       </div>
     </div>
   </section>
-  
 
   <!-- ======== APPLY SECTION ======== -->
   <section class="apply" id="apply">
@@ -189,7 +275,7 @@
     <p>&copy; 2025 Nigeria Foundation - All rights reserved.</p>
   </footer>
 
-  <!-- AOS and Your Script -->
+  <!-- AOS and Your Script -->  
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
