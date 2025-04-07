@@ -1,11 +1,11 @@
 :root {
-  --primary-color: #1a9057; /* Green shade */
-  --secondary-color: #f9ffec; /* Secondary color */
+  --primary-color: #1a9057;
+  --secondary-color: #f9ffec;
   --text-color: #333;
   --transition-speed: 0.3s;
 }
 
-/* Basic Reset */
+/* ===== OLADOYIN DANIEL CODES ===== */
 * {
   margin: 0;
   padding: 0;
@@ -21,12 +21,11 @@ body {
   overflow-x: hidden;
 }
 
-/* ======== HEADER / NAVBAR ======== */
 header {
   background-color: var(--primary-color);
   color: var(--secondary-color);
   padding: 1rem 2rem;
-  position: fixed; /* Sticky Navbar */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -39,16 +38,15 @@ header {
   justify-content: space-between;
 }
 
-/* Logo */
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
 }
 .logo img {
-  height: 50px;
+  height: 100px;
+  width: 100px;
 }
 
-/* Navigation Links */
 .nav-links {
   list-style: none;
   display: flex;
@@ -64,9 +62,8 @@ header {
   color: #ddd;
 }
 
-/* Hamburger Styles */
 .hamburger {
-  display: none; /* Hidden by default */
+  display: none;
   flex-direction: column;
   cursor: pointer;
   gap: 5px;
@@ -78,7 +75,6 @@ header {
   transition: all var(--transition-speed);
 }
 
-/* ======== HERO SECTION ======== */
 .hero {
   background: url("https://africanvoiceonline.co.uk/wp-content/uploads/2023/12/Undergraduates-pix.jpg")
     no-repeat center center/cover;
@@ -87,7 +83,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 6rem 2rem; /* Extra top padding to account for sticky header */
+  padding: 6rem 2rem; 
   text-align: center;
   animation: fadeIn 2s ease-in-out;
 }
@@ -106,7 +102,7 @@ header {
   margin-bottom: 2rem;
 }
 
-/* ======== BUTTON ======== */
+/* ======== OLADOYIN DANIEL CODES ======== */
 .btn {
   display: inline-block;
   background-color: var(--secondary-color);
@@ -122,7 +118,6 @@ header {
   color: var(--primary-color);
 }
 
-/* ======== STEPS SECTION ======== */
 .steps {
   padding: 3rem 2rem;
   background-color: #fff;
@@ -161,7 +156,6 @@ header {
   font-size: 1.2rem;
 }
 
-/* ======== SCHOLARSHIP BENEFITS SECTION ======== */
 .benefits {
   padding: 3rem 2rem;
   text-align: center;
@@ -186,7 +180,7 @@ header {
   color: var(--primary-color);
 }
 
-/* ======== FEATURED SCHOLARSHIPS SLIDER ======== */
+
 .featured {
   padding: 3rem 2rem;
   background-color: #fff;
@@ -247,7 +241,6 @@ header {
   background: rgba(0,0,0,0.8);
 }
 
-/* ======== ELIGIBILITY SECTION with Background Image ======== */
 .eligibility {
   padding: 3rem 2rem;
   background: linear-gradient(rgba(249,255,236,0.8), rgba(249,255,236,0.8)),
@@ -260,7 +253,6 @@ header {
   color: var(--primary-color);
 }
 
-/* ======== GENERAL ELIGIBILITY SECTION ======== */
 .container {
   padding: 3rem 2rem;
   max-width: 1000px;
@@ -278,7 +270,7 @@ header {
   margin-left: 1.5rem;
 }
 
-/* ======== FAQ SECTION ======== */
+/* ======== OLADOYIN DANIEL CODES ======== */
 .faq {
   padding: 3rem 2rem;
   background-color: #fff;
@@ -320,7 +312,6 @@ header {
   font-weight: bold;
 }
 
-/* ======== APPLY SECTION ======== */
 .apply {
   background-color: var(--primary-color);
   color: var(--secondary-color);
@@ -337,7 +328,6 @@ header {
   margin-top: 1rem;
 }
 
-/* ======== FOOTER ======== */
 footer {
   background-color: #333;
   color: var(--secondary-color);
@@ -345,7 +335,7 @@ footer {
   padding: 1rem;
 }
 
-/* ======== RESPONSIVE MEDIA QUERIES ======== */
+
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 2rem;
@@ -370,7 +360,7 @@ footer {
     flex-direction: column;
     align-items: center;
   }
-  /* Ensure hamburger shows on mobile */
+  
   .hamburger {
     display: flex;
     position: absolute;
@@ -387,8 +377,8 @@ footer {
 }
 
 .stat {
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   padding: 1rem 2rem;
   border-radius: 10px;
   text-align: center;
@@ -407,7 +397,6 @@ footer {
   margin-bottom: 0.5rem;
 }
 
-/* Responsive for smaller screens */
 @media (max-width: 768px) {
   .stats {
     flex-direction: column;
@@ -415,7 +404,7 @@ footer {
   }
 }
 
-/* ======== ANIMATIONS ======== */
+/* ======== OLADOYIN DANIEL CODES 08125268335 ======== */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }

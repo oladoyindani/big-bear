@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // FAQ Toggle Code
+  
   const faqQuestions = document.querySelectorAll('.faq-question');
 
   faqQuestions.forEach(question => {
@@ -16,8 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
-
-  // Hamburger Menu Toggle Code
+//Oladoyin Daniel Codes 
   const hamburger = document.getElementById('hamburger');
   const navLinks = document.getElementById('nav-links');
 
@@ -25,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     navLinks.classList.toggle('active');
   });
 
-  // Slider Functionality
+
   const slides = document.querySelectorAll('.slide');
   const prevSlideBtn = document.getElementById('prevSlide');
   const nextSlideBtn = document.getElementById('nextSlide');
@@ -51,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
   nextSlideBtn.addEventListener('click', nextSlide);
   prevSlideBtn.addEventListener('click', prevSlide);
 
-  // Auto-play slider every 5 seconds
+  
   setInterval(nextSlide, 5000);
 });
 
@@ -79,14 +78,14 @@ document.addEventListener('DOMContentLoaded', () => {
     updateCounter();
   }
 
-  // Optional: start when stats enter the viewport
+
   function initCounters() {
     const stats = document.querySelectorAll(".count");
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           startCounter(entry.target);
-          observer.unobserve(entry.target); // Only run once
+          observer.unobserve(entry.target);
         }
       });
     }, { threshold: 1 });
@@ -95,3 +94,5 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   document.addEventListener("DOMContentLoaded", initCounters);
+
+  // OLADOYIN DANIEL CODES 08125268335
